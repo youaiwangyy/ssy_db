@@ -23,10 +23,10 @@ def session(addr, database):
         __database = database
         return getSession(__username, __password, __host, __port, __database)
     elif('test' == addr):#test
-        __username = "root_dev"
-        __password = "root_dev_password"
-        __host = "host_dev"
-        __port = "port_dev"
+        __username = "mysqlsiud"
+        __password = "mysql!@#456"
+        __host = "172.16.0.15"
+        __port = 3306
         __database = database
         return getSession(__username, __password, __host, __port, __database)
     elif ('prod' == addr):#prod

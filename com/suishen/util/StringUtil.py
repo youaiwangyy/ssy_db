@@ -2,11 +2,18 @@
 #-*- coding:UTF-8 -*-
 
 class String:
-    def isBlank(source):
-        return source.strip()
+    'String 工具类'
+    def isBlank(self, source):
+        return not source.strip()
+    def __init__(self):
+        return
 
-    def isNotBlank(source):
-        return String.isBlank(source)
 
 
+StringUtil = String()
 
+ss = ""
+if StringUtil.isBlank(ss):
+    print "ss is null"
+else :
+    print "ss not null"
